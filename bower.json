@@ -1,0 +1,25 @@
+{
+  "name": "gdgMean.io",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "sahanarula <sahiln123@gmail.com>"
+  ],
+  "description": "gdg mean io",
+  "keywords": [
+    "gdg",
+    "node",
+    "io"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15"
+  }
+}

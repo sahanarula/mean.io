@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="gdg">
+<head>
+	<title>gdg mean io</title>
+	<script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+</head>
+<body>
+<section class="header" ng-controller="HeaderController">
+<ul>
+	<li ng-repeat="person in people">{{person.name}}: {{person.reg}}
+	<button ng-click="delete($index)">X</button>
+	</li>
+</ul>
+<input type="text" ng-model="name">
+<input type="text" ng-model="reg">
+<button ng-click="addMember()">Add</button>
+</section>
+<section class="aboutus" ng-controller="AboutController">
+	
+</section>
+<section class="team" ng-controller="TeamController">
+
+</section>
+<script type="text/javascript" src="dist/js/gdg.js"></script>
+</body>
+</html>
