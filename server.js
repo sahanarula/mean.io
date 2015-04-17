@@ -9,19 +9,20 @@ app.use(express.static(__dirname + '/public'));
 // app.use(bodyParser());
 
 
-//api level
-app.get('/api', function(req, res){
+
+//static web pages
+app.get('/', function(req, res){
 	res.render('index')
 })
 
 
-//static web pages
-app.get('/', function(req, res){
-	res.send({name: 'sajol', reg: 'asdasd'});
+//api level
+app.get('/api/user', function(req, res){
+	res.json({name: 'sahil', reg: '12bce0416'});
 })
 
 
-
+//api level
 
 app.listen(3000, function(){
 	console.log('listening at 3000');
