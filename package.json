@@ -1,0 +1,28 @@
+{
+  "name": "gdgMean.io",
+  "version": "1.0.0",
+  "description": "gdg io",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "^4.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sahanarula/mean.io.git"
+  },
+  "keywords": [
+    "gdg",
+    "index"
+  ],
+  "author": "sahil narula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahanarula/mean.io/issues"
+  },
+  "homepage": "https://github.com/sahanarula/mean.io"
+}

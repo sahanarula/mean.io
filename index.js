@@ -1,7 +1,24 @@
-var http = require('http');
+var express = require('express');
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World\n');
-}).listen(1337, '127.0.0.1');
-console.log('Server running at http://127.0.0.1:1337/');
+var app = express();
+
+
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+app.use(express.static(__dirname + '/public'));
+// app.use(bodyParser());
+
+
+
+//static web pages
+app.get('/', function(req, res){
+	res.render('index')
+})
+
+
+
+//api level
+
+app.listen(3000, function(){
+	console.log('listening at 3000');
+})
